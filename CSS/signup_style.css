@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f4f4f7;
+}
+
+.header {
+  height: 90px;
+  background-color: #4c67a6;
+  width: 100%;
+  position: fixed;
+}
+
+.header .conteaner {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px 150px;
+  margin: auto;
+}
+
+.header .conteaner .fieled {
+  color: #fff;
+  margin-left: 10px;
+}
+
+.header .conteaner .fieled input {
+  width: 225px;
+  height: 25px;
+  outline: none;
+  padding: 0px 10px;
+}
+
+.header .conteaner .fieled:nth-child(2),
+.header .conteaner .btn {
+  margin-top: 20px;
+}
+
+.header .conteaner .btn {
+  background-color: #12468e;
+  border: 0;
+  margin-left: 13px;
+  padding: 5px 5px;
+  color: #fff;
+}
+
+.header .conteaner .forgitten {
+  opacity: 0.7;
+}
+
+.contents {
+  height: 100vh;
+  padding-top: 100px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 150px;
+}
+
+.contents .content-box h2 {
+  font-size: 50px;
+  /* margin-bottom: 10px; */
+}
+
+.contents .content-box p {
+  /* color: red; */
+  font-size: 22px;
+}
+
+.contents .content-box .free-text {
+  margin: 15px 0px;
+}
+
+.contents .content-box .username input {
+  width: 250px;
+  padding: 10px 8px;
+  margin: 10px 0 20px 0;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 3px;
+}
+
+.contents .content-box .username input:first-child {
+  margin-right: 10px;
+}
+
+.contents .content-box .phone-email input {
+  width: 514px;
+  padding: 10px;
+  display: block;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 5px;
+}
+
+.contents .content-box .phone-email input:last-child {
+  margin: 20px 0;
+}
+
+.contents .content-box .birthday {
+  margin-bottom: 20px;
+  opacity: 0.6;
+}
+
+.contents .content-box .date {
+  display: flex;
+  align-items: center;
+}
+
+.contents .content-box .date p {
+  width: 200px;
+  color: #216dc3;
+  font-size: 17px;
+  margin-left: 10px;
+  line-height: -3px;
+}
+
+.contents .content-box .date input {
+  padding: 7px 5px;
+  width: 250px;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.contents .content-box .genter {
+  display: flex;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.contents .content-box .genter .male {
+  margin-left: 15px;
+}
+
+.contents .content-box .genter .female label,
+.contents .content-box .genter .male label {
+  font-size: 20px;
+  opacity: 0.7;
+}
+
+.contents .content-box .privacy {
+  width: 430px;
+  font-size: 17px;
+  margin: 20px 0 25px 0;
+}
+
+.contents .content-box .privacy span {
+  color: #216dc3;
+}
+
+.contents .content-box .btn {
+  padding: 10px 30px;
+  font-size: 20px;
+  background-color: #63a450;
+  border: 0;
+  cursor: pointer;
+  color: #fff;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.contents .content-box .create-page {
+  font-size: 17px;
+}
+
+.contents .content-box .create-page span {
+  color: #216dc3;
+  font-weight: bold;
+  cursor: pointer;
+}
