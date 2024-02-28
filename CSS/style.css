@@ -6,6 +6,7 @@ Global Roots * {
 
 body {
   background-color: #f1f2f5;
+  height: 100vh;
 }
 
 :root {
@@ -150,4 +151,34 @@ body {
 .header .header-box .nav-right .profile p {
   font-size: 18px;
   font-weight: 600;
+}
+
+/* main contents. */
+
+.contents {
+  height: 100vh;
+  width: 100vw;
+}
+
+.contents .contents-box {
+  display: flex;
+  justify-content: space-between;
+  break-inside: red;
+  height: 100%;
+  width: 100%;
+}
+
+.contents .contents-box .left-side {
+  flex-basis: 25%;
+  background-color: red;
+  overflow: auto;
+}
+
+.contents .contents-box .left-side:hover {
+  overflow: scroll;
+  cursor: pointer;
+}
+.contents .contents-box .right-side {
+  flex-basis: 25%;
+  background-color: red;
 }
