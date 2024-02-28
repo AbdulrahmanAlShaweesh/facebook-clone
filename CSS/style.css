@@ -1,9 +1,153 @@
-p {
-  height: 40px;
-  width: 150px;
-  background-color: red;
+Global Roots * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-p:hover {
-  rotate: 10deg;
+body {
+  background-color: #f1f2f5;
+}
+
+:root {
+  --filed-bc: #f5f0f0;
+  --icon-bc: #1877f2;
+}
+
+.header {
+  height: 60px;
+  /* background-color: red; */
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0px 1px 3px #ccc;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+}
+
+.header .header-box {
+  height: 100%;
+  width: 95%;
+  margin: auto;
+}
+
+.header .header-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .header-box .nav-left {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+  flex-basis: 20%;
+  /* position: relative; */
+}
+
+.header .header-box .nav-left .search {
+  position: relative;
+}
+
+.header .header-box .nav-left .fa-facebook {
+  font-size: 40px;
+  margin-right: 10px;
+  color: var(--icon-bc);
+}
+
+.header .header-box .nav-left input {
+  padding: 10px 37px;
+  width: 120px;
+  border-radius: 20px;
+  border: 0;
+  outline: none;
+  background-color: var(--filed-bc);
+  position: relative;
+  color: #606770;
+}
+
+.header .header-box .nav-left .fa-solid {
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  color: #606770;
+  font-size: 15px;
+}
+
+.header .header-box .nav-center {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-basis: 30%;
+  /* background-color: red; */
+  height: 100%;
+}
+
+.header .header-box .nav-center a {
+  font-size: 30px;
+  color: grey;
+  height: 90%;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 10px 4px 0px;
+  transition: 0.5s;
+  /* background-color: green; */
+}
+
+.header .header-box .nav-center a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+}
+
+.header .header-box .nav-center a .active {
+  background-color: #fff;
+}
+
+.header .header-box .nav-center .active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  color: #1877f2;
+  border-radius: 0px;
+  border-bottom: 2px solid #1877f2;
+}
+
+.header .header-box .nav-right {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-basis: 25%;
+  /* background-color: red; */
+  height: 100%;
+}
+
+.header .header-box .nav-right a {
+  padding: 14px 16px;
+  background-color: #e5e6ec;
+  border-radius: 50%;
+  margin-left: 10px;
+  color: #001;
+}
+
+.header .header-box .nav-right .profile {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.header .header-box .nav-right .profile img {
+  height: 42px;
+  width: 43px;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.header .header-box .nav-right .profile p {
+  font-size: 18px;
+  font-weight: 600;
 }
